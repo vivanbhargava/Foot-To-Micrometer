@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Foot To Micrometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Foot</label>
+            <input id="input" type="number" placeholder="Foot" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Micrometer: <span id="outputmicro"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputmicro").innerHTML = valNum * 304800;
+        }
+    </script>
+
+</body></html>
